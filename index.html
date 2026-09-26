@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Escape Terms of Use</title>
+<meta name="description" content="Terms of Use for Escape, the bad-habit quitting app for iPhone and iPad.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Inter:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --bg-top: #eaf3ff;
+    --bg: #f7f5ff;
+    --card: #ffffff;
+    --ink: #2b2856;
+    --ink-soft: #5c5990;
+    --ink-faint: #8683b5;
+    --accent: #6c5ce7;
+    --accent-soft: #ece9ff;
+    --rule: #e3dff7;
+    --shadow: 0 10px 30px rgba(90, 79, 184, 0.10);
+    --font-head: 'Nunito', ui-rounded, system-ui, sans-serif;
+    --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg-top: #1c1a45; --bg: #0b0a1f; --card: #1a1840; --ink: #f4f2ff; --ink-soft: #b5b2e0;
+      --ink-faint: #8a87bd; --accent: #a99dff; --accent-soft: #2a2760; --rule: #2d2b5e;
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg-top: #1c1a45; --bg: #0b0a1f; --card: #1a1840; --ink: #f4f2ff; --ink-soft: #b5b2e0;
+    --ink-faint: #8a87bd; --accent: #a99dff; --accent-soft: #2a2760; --rule: #2d2b5e;
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+  body {
+    margin: 0; color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.7;
+    background: linear-gradient(180deg, var(--bg-top) 0, var(--bg) 520px) var(--bg);
+    background-color: var(--bg);
+  }
+  a { color: var(--accent); text-underline-offset: 3px; }
+
+  header.top {
+    position: sticky; top: 0; z-index: 5;
+    backdrop-filter: saturate(1.4) blur(14px); -webkit-backdrop-filter: saturate(1.4) blur(14px);
+    background: color-mix(in srgb, var(--bg-top) 78%, transparent);
+    border-bottom: 1px solid var(--rule);
+  }
+  .bar { max-width: 820px; margin: 0 auto; padding: 12px 16px; display: flex; align-items: center; gap: 12px; }
+  .brand { display: flex; align-items: center; gap: 10px; font-family: var(--font-head); font-weight: 800; font-size: 20px; color: var(--ink); text-decoration: none; }
+  .orb {
+    width: 30px; height: 30px; border-radius: 50%; flex: none;
+    background: radial-gradient(circle at 34% 28%, #e3dcff 0, #8e80ff 45%, #4a3cb8 100%);
+    box-shadow: 0 3px 8px rgba(74, 60, 184, 0.35);
+  }
+  .tabs { margin-left: auto; display: flex; gap: 6px; }
+  .tabs a {
+    font-family: var(--font-head); font-weight: 700; font-size: 14px; text-decoration: none;
+    color: var(--ink-soft); padding: 7px 14px; border-radius: 999px;
+  }
+  .tabs a:hover { background: var(--accent-soft); color: var(--ink); }
+
+  main { max-width: 820px; margin: 0 auto; padding: 40px 16px 80px; }
+  .hero h1 { font-family: var(--font-head); font-weight: 800; font-size: clamp(30px, 6vw, 42px); line-height: 1.15; margin: 0 0 10px; }
+  .hero p { color: var(--ink-soft); margin: 0; max-width: 60ch; }
+  .glance {
+    margin: 28px 0 8px; display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px;
+  }
+  .glance div { background: var(--card); border-radius: 18px; padding: 14px 16px; box-shadow: var(--shadow); }
+  .glance strong { display: block; font-family: var(--font-head); font-size: 16px; margin-bottom: 2px; }
+  .glance span { color: var(--ink-soft); font-size: 14px; line-height: 1.5; }
+
+  article {
+    background: var(--card); border-radius: 26px; box-shadow: var(--shadow);
+    padding: clamp(22px, 5vw, 44px); margin-top: 32px;
+  }
+  article > h2 { font-family: var(--font-head); font-weight: 800; font-size: 30px; margin: 0 0 4px; }
+  .meta { color: var(--ink-faint); font-size: 14px; margin: 0 0 24px; }
+  article h3 { font-family: var(--font-head); font-weight: 800; font-size: 19px; margin: 32px 0 6px; }
+  article p, article li { color: var(--ink-soft); }
+  article strong { color: var(--ink); }
+  article ul { padding-left: 20px; }
+  article li { margin: 4px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--rule); }
+  th { font-family: var(--font-head); color: var(--ink); font-size: 14px; }
+  td { color: var(--ink-soft); }
+  .table-wrap { overflow-x: auto; }
+  .note { background: var(--accent-soft); border-radius: 16px; padding: 14px 18px; color: var(--ink); margin: 16px 0; }
+  .caps { text-transform: uppercase; font-size: 14px; letter-spacing: .01em; }
+  footer { max-width: 820px; margin: 0 auto; padding: 0 16px 48px; color: var(--ink-faint); font-size: 14px; text-align: center; }
+  @media (max-width: 480px) { .tabs a { padding: 7px 10px; } .brand span { display: none; } }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="bar">
+    <a class="brand" href="#top"><div class="orb" aria-hidden="true"></div><span>Escape</span></a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <h1>Terms &amp; Conditions</h1>
+    <p>The rules for using Escape, including subscriptions, the free trial and important health information.</p>
+    
+  </section>
+
+  <article id="terms">
+    <h2>Terms of Use</h2>
+    <p class="meta">Effective September 26, 2026</p>
+
+    <p>These terms are an agreement between you and the developer of Escape (“we”, “us”) for your use of the Escape app. By downloading or using the app, you agree to them. If you don't agree, please don't use Escape.</p>
+
+    <h3>1. Not medical advice</h3>
+    <div class="note"><strong>Escape is a self-help tool, not a medical or mental-health service.</strong> It doesn't diagnose or treat any condition, and nothing in it replaces advice from a doctor, therapist or addiction specialist. If you are in crisis or think you may harm yourself, contact your local emergency number or a crisis line right away.</div>
+    <p>Stopping some substances, such as alcohol or certain drugs, can be dangerous without medical supervision. Talk to a healthcare professional before you begin.</p>
+
+    <h3>2. Your account</h3>
+    <p>You need an account to use Escape. You're responsible for keeping your sign-in details safe and for activity on your account. Give accurate information, and tell us if you think your account has been used without permission. You can delete your account at any time from <strong>You → Delete account</strong>.</p>
+
+    <h3>3. Free trial and Escape Pro</h3>
+    <ul>
+      <li>Every feature is free for <strong>7 days</strong> from the first time you open the app. After that, continuing to use Escape requires an Escape Pro subscription.</li>
+      <li>Escape Pro is offered as weekly, monthly or yearly auto-renewing subscriptions. Prices are shown in the app before you buy and may vary by country.</li>
+      <li>Payment is charged to your Apple ID when you confirm the purchase.</li>
+      <li>A subscription <strong>renews automatically</strong> unless you turn off auto-renew at least 24 hours before the end of the current period. Your account is charged for renewal within 24 hours before the period ends.</li>
+      <li>You can manage or cancel in <strong>Settings → [your name] → Subscriptions</strong> on your device, or from <strong>You → Manage subscription</strong> in the app. Cancelling stops future renewals; the current period stays active until it ends.</li>
+      <li>Refunds are handled by Apple under its policies. Request one at <a href="https://reportaproblem.apple.com" rel="noopener">reportaproblem.apple.com</a>.</li>
+    </ul>
+
+    <h3>4. Your content</h3>
+    <p>What you write in Escape (habits, notes and journal entries) belongs to you and stays on your device. Because we don't store it, we can't recover it if it is lost or deleted. Keep your own device backups if it matters to you.</p>
+
+    <h3>5. Acceptable use</h3>
+    <p>Don't misuse Escape: don't try to break, reverse-engineer, overload or get around its security or subscription checks; don't create accounts with false information or on someone else's behalf without permission; and don't use the app for anything unlawful.</p>
+
+    <h3>6. Licence and ownership</h3>
+    <p>We give you a personal, non-transferable, revocable licence to use Escape on Apple devices you own or control, as permitted by the App Store's Usage Rules. The app, its design, planets, artwork and text are owned by us and protected by law. These terms add to <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Apple's Standard Licensed Application End User License Agreement</a>; if the two conflict, these terms apply to the extent the law allows.</p>
+
+    <h3>7. Third-party services</h3>
+    <p>Sign-in uses Apple, Google and Google Firebase, and purchases go through Apple's App Store. Their own terms apply to your use of those services, and we are not responsible for them.</p>
+
+    <h3>8. Changes and availability</h3>
+    <p>We may update, change or discontinue features of Escape. We may also update these terms; we'll change the date above and, for significant changes, let you know in the app. Continuing to use Escape after changes means you accept them.</p>
+
+    <h3>9. Ending your use</h3>
+    <p>You can stop using Escape at any time by deleting your account and the app. We may suspend or close accounts that break these terms. Sections that by their nature should continue (such as disclaimers and limits of liability) still apply afterwards.</p>
+
+    <h3>10. Disclaimers</h3>
+    <p class="caps">Escape is provided “as is” and “as available”. To the fullest extent the law allows, we make no warranties of any kind, express or implied, including fitness for a particular purpose. We don't promise that the app will help you quit a habit, or that it will always be available or error-free.</p>
+
+    <h3>11. Limitation of liability</h3>
+    <p class="caps">To the fullest extent the law allows, we are not liable for any indirect, incidental, special or consequential damages, or for lost data, arising from your use of Escape. Our total liability for any claim is limited to the amount you paid for Escape in the 12 months before the claim.</p>
+    <p>Nothing in these terms limits rights you have as a consumer that cannot be limited by law.</p>
+
+    <h3>12. Governing law</h3>
+    <p>These terms are governed by the laws of India. Any disputes will be handled by the courts of India, unless the law of the country you live in gives you the right to bring them locally.</p>
+
+    <h3>13. Apple</h3>
+    <p>These terms are between you and us, not Apple. Apple is not responsible for Escape or its content, has no obligation to provide support or maintenance for it, and is a third-party beneficiary of these terms with the right to enforce them against you.</p>
+
+    <h3>14. Contact</h3>
+    <p>Questions about these terms: <a href="mailto:rajbagri3214@gmail.com">rajbagri3214@gmail.com</a></p>
+  </article>
+</main>
+
+<footer>© 2026 Escape. All rights reserved.</footer>
+
+</body>
+</html>
